@@ -7,6 +7,7 @@ public class Floor {
 
     Floor(double width , double length) {
         if (width < 0) {
+
             this.width  = 0 ;
         } else if (length < 0) {
             this.length =  0 ;
