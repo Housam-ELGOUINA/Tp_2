@@ -8,6 +8,7 @@ public class Main {
                 if ( j== i )  {
                     System.out.print("") ;
 
+
                 } else {
                     System.out.print(" , ") ;
                 }
