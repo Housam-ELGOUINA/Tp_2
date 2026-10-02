@@ -11,6 +11,8 @@ public class Main {
         Point p2 = new Point(2 , 5) ;
 
 
+        System.out.println("the distance from p1 to p2 is : "+ p1.distance(p2));
+        System.out.println("the distance from p1 to p2(2 , 5) using just the variables of x2 and y2 is ( Another way )  : "+ p1.distance(2 , 5));
 
     }
 }
