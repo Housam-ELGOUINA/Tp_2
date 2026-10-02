@@ -8,38 +8,38 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Integer> arrayList = new ArrayList<>();
+        int[] arrayList = new int[6];
 
-        arrayList.add(106);
-        arrayList.add(26) ;
-        arrayList.add(81) ;
-        arrayList.add(5) ;
-        arrayList.add(15) ;
+        arrayList[0]  = 106;
+        arrayList[1]  = 26 ;
+        arrayList[2]  = 81 ;
+        arrayList[3]  =5 ;
+        arrayList[4]  = 15 ;
 
         printarray(sortInteger(arrayList));
 
     }
 
 
-    public static void printarray(ArrayList<Integer> arr) {
-        for ( int i =0  ; i < arr.size() ; i++) {
-            System.out.println("Element "+ i + " : " + arr.get(i));
+    public static void printarray(int[] arr) {
+        for ( int i =0  ; i < arr.length ; i++) {
+            System.out.println("Element "+ i + " : " + arr[i]);
         }
     }
 
-    public static ArrayList<Integer> sortInteger(ArrayList<Integer> arr) {
-        ArrayList<Integer> newArray  = new ArrayList<>();
-        for ( int i = 0 ; i < arr.size() ; i++) {
-            newArray.add(arr.get(i)) ;
+    public static int[] sortInteger(int[] arr) {
+        int[] newArray  = new int[arr.length];
+        for ( int i = 0 ; i < arr.length ; i++) {
+            newArray[i] = (arr[i]) ;
         }
 
 
-        for ( int i = 0 ; i < arr.size() ; i++) {
-            for ( int j = 0 ; j < arr.size() - i - 1 ; j++) {
-                if ( newArray.get(j+1) > newArray.get(j)) {
-                    int temp = newArray.get(j+1);
-                    newArray.set(j+1 ,  newArray.get(j));
-                    newArray.set(j, temp ) ;
+        for ( int i = 0 ; i < arr.length ; i++) {
+            for ( int j = 0 ; j < arr.length - i - 1 ; j++) {
+                if ( newArray[j+1] > newArray[j]) {
+                    int temp = newArray[j+1];
+                    newArray[j+1 ] =   newArray[j];
+                    newArray[j] =  temp ;
                 }
             }
         }
