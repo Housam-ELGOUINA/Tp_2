@@ -11,6 +11,6 @@ public class Main {
         Point p2 = new Point(2 , 5) ;
 
 
-        
+
     }
 }
