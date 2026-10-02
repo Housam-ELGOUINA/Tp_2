@@ -9,7 +9,7 @@ public class Worker {
     public int getAge() {
         return 2026 - Integer.parseInt(birthdate);
     } ;
-    public double something() {} ;
+    public double something() {return 0 ; } ;
     public void terminate(String endDate) {
         return;
     }
